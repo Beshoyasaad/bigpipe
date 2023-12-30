@@ -1,0 +1,25 @@
+/* sidebar.css */
+#sidebar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  #sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #sidebar li {
+    margin-bottom: 5px;
+  }
+  
+  #sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #sidebar a:hover {
+    text-decoration: underline;
+  }
+  

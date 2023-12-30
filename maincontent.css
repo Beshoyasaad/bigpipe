@@ -1,0 +1,13 @@
+/* maincontent.css */
+#mainContent {
+    margin: 20px;
+  }
+  
+  #mainContent h2 {
+    color: #333;
+  }
+  
+  #mainContent p {
+    color: #666;
+  }
+  

@@ -1,0 +1,33 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigPipe Frontend Example</title>
+</head>
+<body>
+
+<div id="header"></div>
+<div id="sidebar"></div>
+<div id="mainContent"></div>
+<div id="footer"></div>
+
+<script>
+  // Function to fetch content from the server asynchronously
+  async function fetchContent(componentName) {
+    const response = await fetch(`http://127.0.0.1:3000/${componentName}`);
+    const content = await response.text();
+    document.getElementById(componentName.toLowerCase()).innerHTML = content;
+  }
+
+  // Fetch content for each component asynchronously
+  fetchContent('Header');
+  fetchContent('Sidebar');
+  fetchContent('MainContent');
+  fetchContent('Footer');
+</script>
+
+</body>
+</html>
